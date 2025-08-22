@@ -1,0 +1,24 @@
+ Pour convertir un dossier entier :
+python convertisseur.py mon_dossier -d -o sortie_md
+
+
+Pour convertir un seul fichier :
+python convertisseur.py document.docx
+
+
+Pour convertir un site et ses sous site important:
+python convertisseur.py https://example.com --website --depth 3 --max-pages 100 -o mon_archive
+
+
+Pour convertir un seul site:
+python convertisseur.py https://example.com/page.html -o page.md
+
+
+convertir un dossier et ses sous dossiers:
+python convertisseur.py chemin/vers/votre_dossier --directory --recursive -o chemin/vers/sortie
+ou
+python convertisseur.py ~/Documents/mes_documents -d -r -o chemin/vers/sortie
+
+
+- Sans `--website`, une seule page est convertie.
+- Avec `--website`, on explore récursivement.
